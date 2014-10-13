@@ -1,0 +1,18 @@
+WHATWG
+google & apple
+living standard
+
+W3C
+microsoft
+firefox
+want versioning
+
+
+browser stats
+http://gs.statcounter.com/
+
+checking documentation
+(1) http://www.webplatform.org/
+(2) https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+
+
