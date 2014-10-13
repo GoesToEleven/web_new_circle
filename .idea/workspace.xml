@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f8d28da-3808-4606-b278-44739fa3ff57" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/06.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/07.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/08.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/four.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/one.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/three.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/two.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notes.txt" afterPath="$PROJECT_DIR$/notes.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="web_new_circle.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +37,8 @@
       <file leaf-file-name="notes.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notes.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3179551" vertical-offset="0" max-vertical-offset="802">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.4114713" vertical-offset="3480" max-vertical-offset="5160">
+              <caret line="254" column="38" selection-start-line="254" selection-start-column="38" selection-end-line="254" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -48,6 +57,18 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/one.html" />
+        <option value="$PROJECT_DIR$/two.html" />
+        <option value="$PROJECT_DIR$/three.html" />
+        <option value="$PROJECT_DIR$/one/four.html" />
+        <option value="$PROJECT_DIR$/one/one.html" />
+        <option value="$PROJECT_DIR$/one/two.html" />
+        <option value="$PROJECT_DIR$/one/three.html" />
+        <option value="$PROJECT_DIR$/four.html" />
+        <option value="$PROJECT_DIR$/05.html" />
+        <option value="$PROJECT_DIR$/06.html" />
+        <option value="$PROJECT_DIR$/07.html" />
+        <option value="$PROJECT_DIR$/08.html" />
         <option value="$PROJECT_DIR$/notes.txt" />
       </list>
     </option>
@@ -108,6 +129,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
@@ -205,10 +227,74 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/one.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.077120826" vertical-offset="0" max-vertical-offset="778">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/two.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.25" vertical-offset="0" max-vertical-offset="795">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/three.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="180">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/four.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="18" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="360">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8097686" vertical-offset="0" max-vertical-offset="778">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/07.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4048843" vertical-offset="0" max-vertical-offset="778">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/08.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15686275" vertical-offset="0" max-vertical-offset="765">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/notes.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3179551" vertical-offset="0" max-vertical-offset="802">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4114713" vertical-offset="3480" max-vertical-offset="5160">
+          <caret line="254" column="38" selection-start-line="254" selection-start-column="38" selection-end-line="254" selection-end-column="38" />
           <folding />
         </state>
       </provider>

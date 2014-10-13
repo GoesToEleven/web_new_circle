@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>My book store</title>
+
+<header>
+    <h1>Book store</h1>
+</header>
+
+<script>
+    function add() {
+        var template = document.getElementById("myTemplate").innerHTML;
+        document.getElementById("lists").innerHTML += template;
+    }
+
+</script>
+
+<template id="myTemplate">
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+</template>
+
+<a href="javascript:add()">Add a list</a>
+
+<section id="lists"></section>

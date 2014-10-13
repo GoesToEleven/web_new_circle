@@ -8,11 +8,331 @@ firefox
 want versioning
 
 
+------------------------------------------
+
 browser stats
 http://gs.statcounter.com/
+http://www.akamai.com/io
+
+------------------------------------------
 
 checking documentation
 (1) http://www.webplatform.org/
 (2) https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 
+------------------------------------------
 
+webkit
+opensource version of rendering engine created by apple
+took open source engine - khtml - konqueror engine in linux
+created webkit
+google chrome also took webkit engine
+chrome is half the browser market now, so google has power to change
+they *forked* webkit and now they have blink
+google chrome's rendering engine is now called blink
+it's open source
+
+now on webkit
+apple & blackberry
+
+firefox has it's own rendering engine
+gecko
+
+on blink
+google and all the others
+
+firefox: Gecko
+Chrome: Blink (webkit fork)
+safari (mac /ios): webkit
+internet explorer: trident (microsoft proprietary engine)
+opera: blink
+android browser: webkit (on the way out)
+
+------------------------------------------
+
+to see if something works in different browsers
+http://caniuse.com/
+
+------------------------------------------
+
+PRESENTING
+omnidazzle for mac
+and accessibility ZOOM for mac
+
+------------------------------------------
+
+adobe phonegap
+
+------------------------------------------
+
+open source html editor
+can put this in pages so clients browsing can create html
+ACE
+
+
+------------------------------------------
+
+<!doctype html>
+
+don't need to close a lot of tags
+
+------------------------------------------
+
+in IDE
+div>ul>li*5>a>lorem
+
+div#section.mydiv>li*10
+
+HIT TAB AFTER ABOVE CODE
+        open source feature
+        emmet.io
+
+------------------------------------------
+
+creating different cursors with ALT
+type on several lines at the same time
+
+------------------------------------------
+
+IDE
+sublime - most popular
+webstorm
+brackets - gaining support
+atom released by github
+
+------------------------------------------
+
+this is all you need for an html doc
+
+<!doctype html>
+<title>my title</title>
+
+------------------------------------------
+
+<!doctype html>
+<title>my title</title>
+<style>
+    body {background: red};
+</style>
+
+------------------------------------------
+
+<!doctype html>
+<title>my title</title>
+<meta charset=utf-8>
+<p id=paragraph class="blue big">
+
+you no longer need quotes, unless there are two or more words
+
+------------------------------------------
+device width
+240     watch
+320     iphone, 3gs, 4, 5, android < 4
+360     android 5
+375     iphone 6
+300     android phablets
+414     iphone6+
+
+
+phablet = phone / tablet
+
+600     android tablets 7-8"
+768     ipad
+800     android tablets 9-10"
+
+<meta name=viewport content:"width=device-width">
+
+treats mobile screen not as a desktop screen
+                        DPR (device pixel ratio)    device width (design for these device widths)
+iphone      320         1                           320
+iphone4     640         2                           320
+iphone6     750         2                           375
+iphone6+    1080        3                           414
+
+galaxy SI   320         1                           320
+galaxy SII  480         1.5                         320
+galaxy SIII 720         2                           360
+galaxy SIV  1080        3                           360
+LG G3       1920        4                           360
+
+design for the original iphone, 320, DPR 1,
+and the other phones, the browsers will automatically scale it
+
+------------------------------------------
+
+
+open graph
+http://ogp.me/
+
+
+<meta property="og:title" content="The Rock" />
+<meta property="og:type" content="video.movie" />
+<meta property="og:url" content="http://www.imdb.com/title/tt0117500/" />
+<meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg" />
+<h1>hello</h1>
+<p>my text</p>
+
+------------------------------------------
+
+<dl> definition list
+<dt> definition term
+<dd> definition description
+
+------------------------------------------
+
+microdata
+rich snippets (google)
+
+https://support.google.com/webmasters/topic/4599102?hl=en&ref_topic=4598337
+
+https://support.google.com/webmasters/answer/146646?hl=en
+
+schema.org
+data-vocabulary.org
+    schemas at this website
+
+------------------------------------------
+
+parsehub
+on firefox
+
+extracts data from websites with good semantics
+
+------------------------------------------
+
+header
+footer
+section
+article
+nav
+aside
+main
+
+header
+the header of the document
+
+footer
+the last important part of your page
+
+section
+a piece of something bigger
+SECTIONS CAN'T STAND ON THEIR OWN
+YOU EXTRACT A SECTION AND SHOW IT ELSEWHERE, IT WON'T MAKE SENSE
+EXAMPLE: a "number of shares" section inside an article
+take that section elsewhere and you're like, what, number of shares of what?
+
+article
+one option
+one person
+one product on amazon search result
+everything that is a record in a table is a good candidate for an article
+ARTICLES CAN STAND ON THEIR OWN
+THEY MAKE SENSE ON YOUR OWN
+
+aside
+info you can get out of the parent
+YOU CAN REMOVE AN ASIDE AND THE ARTICLE WILL STILL STAND ON ITS OWN
+
+nav
+for the primary navigation of your website
+
+
+main
+only one main per parent
+the main article/section/page of that page
+
+figure
+<figure>
+<figcaption>
+contains one media type
+
+------------------------------------------
+
+picture
+<picture>
+very new
+not supported by a lot of browsers
+replacement for img in some situations
+    when you want to make different images per media queries
+
+<picture>
+<source src="big.jpg" media="min-width: 600">
+<source src="small.jpg" media="max-width: 600">
+</picture>
+
+------------------------------------------
+
+<img src="logo.png"
+     srcset="logo_hi.png 2x, logo-superhi.png 3x">
+
+src would be default
+if density was 2x, the logo_hi image would be used instead of the default
+
+for example:
+
+logo            100x100
+logo_hi         200x200
+logo_superhi    300x300
+
+------------------------------------------
+
+<template>
+
+------------------------------------------
+
+polyfill
+accounting for browsers that don't support a certain feature
+creating that feature / implementing that feature in a different way than in newer browsers
+
+for <template> you can use the polyfill
+
+<style>
+template {display: none}
+</style>
+
+------------------------------------------
+
+<script>
+
+no longer need the type attribute when you're using javascript
+by default, type is javascript
+
+------------------------------------------
+
+https://www.modern.ie/en-us/report
+
+scans your webpage for common coding problems
+
+------------------------------------------
+
+
+
+------------------------------------------
+
+
+
+------------------------------------------
+
+
+
+------------------------------------------
+
+
+
+------------------------------------------
+
+
+
+------------------------------------------
+
+
+
+------------------------------------------
+
+
+
+------------------------------------------
+
+
+
+------------------------------------------
