@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<title>CSS3</title>
+<h1>This is a header</h1>
+<link rel="stylesheet" href="styles.css">
+<style>
+    body {
+        color: red;
+    }
+    #p2 {
+        background: yellow;
+    }
+    span.important {
+        font-weight: bold;
+    }
+    #menu>li li {
+        border: 2px solid green;
+    }
+    a, #menu {
+        color: green;
+    }
+    a[target=_blank] {
+        font-size: xx-large;
+    }
+    a[href*=yahoo] {
+
+    }
+    a[href^=mailto] {
+
+    }
+    a[href!=pdf] {
+
+    }
+    input[type=checkbox] {
+
+    }
+    input:not([type=checkbox]) {
+
+    }
+    body>ul {
+
+    }
+</style>
+
+<p>
+    This is a <span class="important">paragraph</span>
+</p>
+<p id="p2">
+    This is a different <span class="important">paragraph</span> with
+</p>
+<ul>
+    <li>Item 1
+        <ul id="submenu">
+            <li class="important">Item 1.1
+            <li>Item 1.2
+        </ul>
+    <li><a href="//yahoo.com/news">Item 2</a>
+    <li><a href="http://yahoo.com/news" target="_blank">Item 3</a>
+    <li><a href="http://yahoo.com/news/news1.pdf" target="_blank">Item 4</a>
+    <li>Item 5
+</ul>
+<form>
+    <label for="search">Search in this website</label>
+    <input id="search" name="search" type="search"/>
+    <p>Help me</p>
+</form>

@@ -260,6 +260,13 @@ replacement for img in some situations
 <source src="small.jpg" media="max-width: 600">
 </picture>
 
+
+<picture>
+<source src="logo_P.jpg" media="orientation:portrait">
+<source src="logo.L.jpg" media="orientation:landscape">
+</picture>
+
+
 ------------------------------------------
 
 <img src="logo.png"
@@ -305,22 +312,58 @@ scans your webpage for common coding problems
 
 ------------------------------------------
 
+webp
 
-
-------------------------------------------
-
-
-
-------------------------------------------
+google
+https://developers.google.com/speed/webp/
 
 
 
 ------------------------------------------
 
+<style>
+defaults to css
+don't need to include "type" attribute when css
 
 
 ------------------------------------------
 
+CSS SELECTORS
+
+psuedo-classes
+
+li:hover
+
+li:nth-child(4)
+
+li:nth-child(2n)
+
+li:nth-child(2n+1)
+
+li:nth-child(4n) {
+    margin-bottom:50px;
+}
+
+
+
+------------------------------------------
+
+web components
+new vision for web development
+create your own html elements
+polymer-project by google
+
+------------------------------------------
+
+psuedo-elements
+
+p::first-letter{font-size: 40x;}
+
+p::first-line {background: yellow;}
+
+p::before {content: 'HEY!!'}
+
+p::after {content: 'WHERE IS THIS TEXT?'}
 
 
 ------------------------------------------

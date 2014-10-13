@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f8d28da-3808-4606-b278-44739fa3ff57" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/06.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/07.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/08.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/four.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/one.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/three.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/two.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/09.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/10.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notes.txt" afterPath="$PROJECT_DIR$/notes.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -37,8 +31,8 @@
       <file leaf-file-name="notes.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notes.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4114713" vertical-offset="3480" max-vertical-offset="5160">
-              <caret line="254" column="38" selection-start-line="254" selection-start-column="38" selection-end-line="254" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.90648377" vertical-offset="4823" max-vertical-offset="5805">
+              <caret line="370" column="0" selection-start-line="370" selection-start-column="0" selection-end-line="370" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -69,6 +63,8 @@
         <option value="$PROJECT_DIR$/06.html" />
         <option value="$PROJECT_DIR$/07.html" />
         <option value="$PROJECT_DIR$/08.html" />
+        <option value="$PROJECT_DIR$/09.html" />
+        <option value="$PROJECT_DIR$/10.html" />
         <option value="$PROJECT_DIR$/notes.txt" />
       </list>
     </option>
@@ -291,10 +287,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/09.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-31.166666" vertical-offset="212" max-vertical-offset="1050">
+          <caret line="64" column="7" selection-start-line="64" selection-start-column="7" selection-end-line="64" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="360">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/notes.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4114713" vertical-offset="3480" max-vertical-offset="5160">
-          <caret line="254" column="38" selection-start-line="254" selection-start-column="38" selection-end-line="254" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.90648377" vertical-offset="4823" max-vertical-offset="5805">
+          <caret line="370" column="0" selection-start-line="370" selection-start-column="0" selection-end-line="370" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<title>CSS3</title>
+<style>
+    p::first-letter {
+        font-size: 40px;
+        display: none;
+    }
+    p::first-line {
+        background: yellow;
+    }
+    p::before {
+        content: url('');
+        width: 10px; height:10px;
+    }
+    p::after {
+        content: 'Where <a>is this</b> text?';
+    }
+</style>
