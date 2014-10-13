@@ -87,6 +87,9 @@ HIT TAB AFTER ABOVE CODE
         open source feature
         emmet.io
 
+
+ul>li*4>article>h2+p[id=item$]
+
 ------------------------------------------
 
 creating different cursors with ALT
