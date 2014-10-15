@@ -1,0 +1,37 @@
+<!doctype html>
+<style>
+    section {
+        border: 1px solid red;
+    }
+</style>
+<h1>Super Table Generator</h1>
+<script>
+    function createTable() {
+        var section = document.querySelector("section");
+
+        var rows = prompt("How many rows?", "4");
+        var cols = prompt("How many cols?", "10");
+        var html = "<table border=1>";
+        for (var i = 0; i < rows; i++) {
+            html += "<tr>";
+            for (var j = 0; j < cols; j++) {
+                html += "<td>";
+                html += "This is " + i + "." + j;
+                html += "</td>";
+            }
+            html += "</tr>";
+        }
+        html += "</table>";
+        section.innerHTML = html;
+    }
+</script>
+<a href="javascript:createTable()">Create Table</a>
+
+<section>
+
+</section>
+
+
+<section>
+
+</section>

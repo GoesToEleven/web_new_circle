@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<title>Forms</title>
+<style>
+    label { display: block }
+    input { margin-bottom: 10px; width: 99% }
+</style>
+ <meta name=viewport content="width=device-width">
+
+<label for="search">Search in this website</label>
+<input autofocus list=myList type=search id="search" maxentries="0" name="search" />
+
+        <datalist id="myList">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+        </datalist>
+
+        <label for="usd">USD Total</label>
+        <input type="number" id="usd">
+        <output></output>
+        <button onclick="document.querySelector('output').innerHTML=document.querySelector('#usd').value/400">Get Bitcoins</button>
+
+
+        <progress max="10" value="2"></progress>
+
+
+
+
+
+<form>
+
+    <label for="firstname">First Name</label>
+    <input required type=text id="firstname" name="firstname" />
+
+    <!--ADDING TYPE ATTRIBUTES-->
+
+    <label for="email">E-mail</label>
+    <input type=email id="email" name="email" />
+
+    <label for="blog">Your blog URL</label>
+    <input placeholder="http://blblblblb" type=url id="blog" name="blog" value="http://" />
+
+    <label for="age">Your age</label>
+    <input min="0" max="100" type=number pattern="[0-9]*" id="age" name="age" />
+
+    <label for="phone">Phone</label>
+    <input type=tel id="phone" name="phone" />
+
+    <label for="qty">How many coffees do you drink daily?</label>
+    <input type=range min=0 max=10 id="qty" name="qty" />
+
+    <label for="birthday">When is your next birthday?</label>
+    <input type=date id="birthday" name="birthday" />
+
+    <label for="alarm">Alarm day and time</label>
+    <input type=datetime-local id="alarm" name="alarm" />
+
+    <!--
+    OTHER TYPE SELECTORS
+    datetime
+    datetime-local
+    week
+    month
+    color
+    -->
+
+</form>
+

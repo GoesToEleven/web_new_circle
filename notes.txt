@@ -371,6 +371,577 @@ p::after {content: 'WHERE IS THIS TEXT?'}
 
 ------------------------------------------
 
+http://stevesouders.com/misc/hybrid-native/index.php
+
+------------------------------------------
+
+h1
+
+google says you should have only one per page
+
+------------------------------------------
+
+PROGRESSIVE ENHANCEMENT
+basic semantic html
+basic css
+advanced css
+animations / transitions
+javascript
+ajax
+
+------------------------------------------
+
+
+BE LIMITLESS
+https://chrome.google.com/webstore/detail/be-limitless/jdpnljppdhjpafeaokemhcggofohekbp?hl=en-US
+CHROME APP
+
+------------------------------------------
+
+
+HEAD vs BODY
+page read top to bottom
+everything in HEAD loaded before BODY
+everything in BODY rendered
+
+put CSS stylesheets in HEAD
+put <scripts> at bottom of page (increases performance)
+
+------------------------------------------
+
+1 second threshold for load times
+
+1 second on 3G network (96% of users worldwide, 72% in states)
+ABF (above the fold) content ... 14KB compressed (40 - 8OKB uncompressed)
+14kb fits into one TCP packet
+
+------------------------------------------
+
+PAGE SPEED INSIGHTS
+https://developers.google.com/speed/pagespeed/insights/
+
+------------------------------------------
+
+
+ARIA
+mdn
+https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
+
+------------------------------------------
+
+
+cloud storage / database storage
+https://www.parse.com/
+
+or
+
+google cloud / data services
+
+------------------------------------------
+
+
+LIVE EDIT in JETBRAINS WEBSTORM
+
+http://www.jetbrains.com/webstorm/webhelp/live-editing-of-html-css-and-javascript.html
+
+http://www.jetbrains.com/webstorm/webhelp/live-edit.html
+------------------------------------------
+
+FORMS
+new type attributes
+
+<label for="search">Search in this website</label>
+<input type=search id="search" maxentries="0" name="search" />
+
+
+<form>
+
+    <label for="firstname">First Name</label>
+    <input id="firstname" name="firstname" />
+
+    <!--ADDING TYPE ATTRIBUTES-->
+
+    <label for="email">E-mail</label>
+    <input type=email id="email" name="email" />
+
+    <label for="blog">Your blog URL</label>
+    <input type=url id="blog" name="blog" value="http://" />
+
+    <label for="age">Your age</label>
+    <input type=number pattern="[0-9]*" id="age" name="age" />
+
+    <label for="phone">Phone</label>
+    <input type=tel id="phone" name="phone" />
+
+    <label for="qty">How many coffees do you drink daily?</label>
+    <input type=range min=0 max=10 id="qty" name="qty" />
+
+    <label for="birthday">When is your next birthday?</label>
+    <input type=date id="birthday" name="birthday" />
+
+    <label for="alarm">Alarm day and time</label>
+    <input type=datetime-local id="alarm" name="alarm" />
+
+    <!--
+    OTHER TYPE SELECTORS
+    datetime
+    datetime-local
+    week
+    month
+    color
+    -->
+
+
+------------------------------------------
+
+
+datalist
+
+<label for="search">Search in this website</label>
+<input list=myList type=search id="search" maxentries="0" name="search" />
+
+        <datalist id="myList">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+        </datalist>
+
+------------------------------------------
+
+        <output>
+
+        </output>
+
+
+
+------------------------------------------
+
+
+        <progress max="10" value="2"></progress>
+
+------------------------------------------
+
+validation
+
+required
+placeholder="http://blblblblb"
+min="0" max="100" type
+
+
+
+------------------------------------------
+
+http://www.abookapart.com/
+
+
+------------------------------------------
+
+CSS COLUMNS
+
+    p {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+
+
+------------------------------------------
+
+
+http://prefixr.com/
+
+        -webkit-column
+        -moz-column
+        column-count
+
+------------------------------------------
+
+contenteditable
+
+fun attribute for debugging in browser / chrome
+
+
+------------------------------------------
+
+css opacity
+
+opacity: 0.5
+
+
+or
+
+background-color: rgba(0, 0, 255, 0.5)
+
+
+------------------------------------------
+
+
+    h1 {
+        text-shadow: 10px 10px 10px gray;
+    }
+
+/*x y blur color*/
+
+
+
+
+------------------------------------------
+
+
+web fonts
+https://www.google.com/fonts
+
+
+------------------------------------------
+
+https://icomoon.io/
+
+
+------------------------------------------
+
+GRADIENT BACKGROUND
+
+http://www.colorzilla.com/gradient-editor/
+
+------------------------------------------
+
+TRANSFORM
+OCCURS AT THE CPU LEVEL
+NOT AT THE BROWSER LEVEL
+OCCURS AFTER THE DOM HAS RENDERED
+
+ div {
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin: 10px;
+	background-color: yellow;
+    border: 2px solid blue;
+ }
+
+ #box1 {
+     transform:rotate(45deg);
+ }
+
+
+------------------------------------------
+
+TRANSITION ANIMATIONS
+
+GREAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+http://leaverou.github.io/animatable/
+
+http://css3.bradshawenterprises.com/
+
+http://css3.bradshawenterprises.com/transitions/
+
+
+------------------------------------------
+
+CSS SPRITES
+
+won't use in 2 or 3 years when http2 comes in
+with http2 browser can make request for more than one file at a time with one http connection
+
+caniuse
+http2
+
+http2 is run on the server, not in html/css/js code
+
+------------------------------------------
+
+EMBEDDING IMAGES IN HTML
+
+BASE64
+
+disadvantage
+not clean html
+image doesn't get cached
+
+advantage
+reduces number of requests to server; saves load time
+however, since the image isn't cached, if it is used again, all the data gets sent again
+
+convert the image file into base64
+put the string into a database, put the string into your webpage
+the text of the webpage is zipped when sending over http to client
+this lets your images get zipped since they're text and sent with the text
+
+you can put the image into css as text and css can be cached
+
+
+
+------------------------------------------
+
+codepen.io
+
+------------------------------------------
+
+MEDIA QUERIES
+conditional css
+
+------------------------------------------
+
+RESPONSIVE WEB DESIGN - three steps:
+(1) use media queries
+(2) fluid layouts
+(3) flexible images
+
+------------------------------------------
+
+RESPONSIVE
+BEST DECISION?
+do you want mobile downloading all the files for desktop?
+
+EXAMPLES:
+starbucks
+apple
+amazon
+
+------------------------------------------
+
+THREE APPROACHES
+
+(1) RESPONSIVE
+one URL, one HTML for all, different CSS
+
+(2) M.DOT
+redirect to m.yourdomain.com
+not a good idea today
+social sharing - someone shares mobile version and then someone on desktop clicks link and sees mobile version
+URL ... UNIQUE resource location
+
+(3) ADAPTIVE DESIGN
+one URL but different HTMLs
+example: apple
+www.apple.com/iphone/
+this is a server side decision
+this isn't something you set in HTML/CSS/JAVASCRIPT code
+
+"user agent sniffing"
+however, every browser identifies itself as Mozilla
+user agent is a mess
+google: ie versions
+see your version: http://whatsmyuseragent.com/
+
+there are server side frameworks that help you do this
+http://wurfl.io/
+
+(4) RESS
+Responsive Webdesign with Server Side component
+one URL, one HTML server-side, different HTML client-side
+
+MAX's ARTICLE
+http://www.smashingmagazine.com/2014/07/22/responsive-web-design-should-not-be-your-only-mobile-strategy/
+
+------------------------------------------
+
+the average RESPONSIVE WEB DESIGN is not MOBILE FIRST
+
+------------------------------------------
+
+GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!!
+
+in the future
+@supports (flexbox) {
+
+}
+
+today
+
+MODERNIZR
+http://modernizr.com/
+http://modernizr.com/download/
+download what you want to detect
+for example: flexbox
+
+create new js file and copy in the modernizr code
+
+<doctype! html>
+<title></title>
+<script src="modernizr.js">
+
+now your <html> will have a bunch of classes
+
+you can then use classes and children to target in css
+
+no-touch #touchDevices {display: none;}
+
+.no-touch #nonTouchDevices {display: none;}
+
+section id=touchDevices
+touch me
+
+section id=nonTouchDevices
+don't touch me
+
+HAZ.io
+http://haz.io/
+lists all of the things you can check with modernizr
+
+
+GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!!
+
+------------------------------------------
+
+javascript blocks parsing
+
+
+css blocks rendering
+browser won't render anything until CSS has downloaded
+
+------------------------------------------
+
+GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!!
+
+Performance test
+http://www.webpagetest.org
+Performance comparison
+http://www.webpagetest.org/compare
+
+GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!!
+
+
+------------------------------------------
+
+javascript
+matchmedia
+
+query on media screen size from javascript
+http://caniuse.com/#feat=matchmedia
+
+
+
+
+------------------------------------------
+
+
+dom w3c
+spec for the dom api
+w3c dom 4
+
+dom4 is the newest dom
+
+------------------------------------------
+
+http://vanilla-js.com/
+
+javascript is faster than frameworks like jquery
+
+------------------------------------------
+
+you can pick good things out of here
+BUT UNDERSTAND WHAT YOU'RE DOING; WHAT IT ALL DOES
+
+http://html5boilerplate.com/
+
+
+------------------------------------------
+
+javascript the good parts
+https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=javascript+the+good+parts&spell=1
+
+
+
+------------------------------------------
+
+scripting languages
+javascript
+
+coffeescript
+DART (google, like Java)
+TypeScript (microsoft, like C#)
+
+all of these scripting languages need to be compiled to javascript
+to then run in browsers
+
+if you learn javascript,
+you don't need the others
+
+------------------------------------------
+
+GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!!
+
+JAVASCRIPT
+
+add this inside <script> ...
+
+"use strict";
+
+... to enforce ecma5 strict (forces good practices of javascript coding)
+
+http://caniuse.com/#feat=use-strict
+
+GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!!
+------------------------------------------
+
+semi-colons optional but BEST PRACTICE to use semi-colons
+
+------------------------------------------
+
+jslint
+
+open source tool
+already embedded in webstorm
+gives you best practices
+
+http://www.jslint.com/
+
+
+------------------------------------------
+
+document.write
+
+document.write("<h1>Hello</h1>")
+
+we don't usually use this
+document.write only can be used when the page is loaded
+it can't be used after the page is loaded
+
+
+document.write will RE WRITE YOUR PAGE / CLEAR YOUR PAGE if you call it after the page has rendered
+------------------------------------------
+
+
+<a href="javascript: createTable()">Create Table</a>
+
+
+
+------------------------------------------
+
+var section = document.querySelector("section");
+setion.innerHTML = "HEY!";
+
+
+or
+
+querySelectorAll
+(returns array)
+
+section.innerHTML += "new info";
+
+
+------------------------------------------
+GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!! GREAT!!!
+https://chrome.google.com/webstore/detail/jetbrains-ide-support/hmhgeddbohgjknpmjagkdomcpobmllji?hl=en
+
+
+------------------------------------------
+
+
+functions are also variables in javascript
+
+------------------------------------------
+
+
+
+------------------------------------------
+
+
+
+------------------------------------------
+
 
 
 ------------------------------------------
@@ -382,3 +953,29 @@ p::after {content: 'WHERE IS THIS TEXT?'}
 
 
 ------------------------------------------
+
+
+
+------------------------------------------
+
+
+
+------------------------------------------
+
+
+
+------------------------------------------
+
+
+
+------------------------------------------
+
+
+
+------------------------------------------
+
+
+
+------------------------------------------
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<title></title>
+<meta name="viewport" content="width=device-width">
+
+<style>
+    body {
+        transition: background 2s;
+    }
+
+    @media (min-width: 500px) {
+        body {
+            background: red;
+        }
+    }
+
+    @media (max-device-width: 400px) {
+        body {
+            background: green;
+        }
+    }
+
+    @media (min-device-width: 400px) and (max-device-width: 400px) {
+        body {
+            background: green;
+        }
+    }
+
+
+    @media (min-device-width: 400px), (max-device-width: 400px) {
+        body {
+            background: green;
+        }
+    }
+
+    @media (screen) {
+        body {
+            background: blue;
+        }
+    }
+
+    @media (print) {
+
+        body {
+            background: white;
+        }
+
+        nav {
+            display: none;
+        }
+    }
+
+    @media (orientation: landscape) {
+
+        body {
+            background: white;
+        }
+
+    }
+
+    @media (-min-webkit-device-pixel-ratio: 2) {
+
+        body {
+            background: white;
+        }
+
+    }
+
+</style>
+
+< ref=external.css media="orientation: landscape">
+< ref=external.css media="orientation: portrait">
+<!-- BROWSER DOWNLOADS ALL CSS --- PERFORMANCE CONCERN -->
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <title></title>
+
+
+<script>
+
+    var cols = prompt("Enter columns");
+    var rows = prompt("Enter rows");
+
+    document.write("<table><tbody>")
+            for (var i = 0; i < rows; i++)
+    {
+        document.write("<tr>");
+                for (var j = 0; j < cols; j++)
+        {
+            document.write("<td>This is column " + j + "</td>");
+        }
+        document.write("</tr>")
+    }
+    document.write("</tbody></table>");
+
+</script>
+
+<style>
+    table {
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+
+    td {
+        border: 1px solid red;
+    }
+</style>

@@ -1,0 +1,50 @@
+<!doctype html>
+<title>hello</title>
+<style>
+
+
+    .state1{
+        opacity: 0;
+    }
+
+    .state2{
+        opacity: 1;
+    }
+
+    .state3{
+        transform: translate(200px, 400px) rotate(180deg);
+    }
+
+
+    #logo {
+        /*transition: opacity 3s, transform 3s, margin 3s;*/
+        transition: all 3s;
+        background: #11bb38;
+        width: 100px;
+        height: 100px;
+    }
+
+    div>p {
+
+    }
+
+
+
+</style>
+<body onload="goToState2()">
+<div id="logo" class="state1" onclick="goToState3Or2()">
+    <p>A</p>
+</div>
+
+        <script>
+            function goToState2() {
+                document.getElementById("logo").className="state2"
+            }
+            function goToState3Or2() {
+                if (document.getElementById("logo").className=="state3")
+                document.getElementById("logo").className="state2"
+                else
+                    document.getElementById("logo").className="state3"
+            }
+        </script>
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<title></title>
+
+
+<section>
+
+</section>
+
+
+<script>
+    var section = document.querySelector("section");
+    var toInject = "<select id=day>";
+    for (var d = 1; d <= 31; d++) {
+        toInject += "<option>" + d;
+    }
+    toInject += "</select>";
+    section.innerHTML = toInject;
+
+</script>
+
+
