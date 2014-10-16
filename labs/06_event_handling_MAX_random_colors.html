@@ -1,0 +1,63 @@
+<!doctype html>
+<style>
+    section {
+        border: 1px solid red;
+    }
+    td {
+        width: 40px;
+        height: 40px;
+    }
+
+    td[data-cell="0-3"] {
+        border: 3px solid red;
+    }
+
+</style>
+<h1>Super Table Generator</h1>
+<script>
+    function createTable() {
+        var section = document.querySelector("section");
+
+        var rows = prompt("How many rows?", "4");
+        var cols = prompt("How many cols?", "10");
+        var html = "<table border=1>";
+        for (var i = 0; i < rows; i++) {
+            html += "<tr>";
+            for (var j = 0; j < cols; j++) {
+                var metadata = i + "-" + j;
+                html += "<td data-cell=" + metadata +">";
+                //html += "This is " + i + "." + j;
+                html += "</td>";
+            }
+            html += "</tr>";
+        }
+        html += "</table>";
+        section.innerHTML = html;
+
+        // Bind event handlers
+        var cells = document.querySelectorAll("td");
+        for (var i=0; i<cells.length; i++) {
+            var currentCell = cells[i];
+            currentCell.addEventListener("mouseover", function() {
+                var colors = ["black", "red", "blue", "yellow", "orange"];
+                this.style.background = colors[getRandom(0, 4)];
+                var divInformation = document.querySelector("#information");
+                divInformation.innerHTML = this.getAttribute("data-cell");
+            });
+            currentCell.addEventListener("mouseout", function() {
+                this.style.background ="white";
+            });
+        }
+    }
+
+    function getRandom(min, max) {
+        return Math.round(Math.random()*(max-min)+min);
+    }
+</script>
+<a href="javascript:createTable()">Create Table</a>
+
+<div id="information"></div>
+
+<section>
+
+</section>

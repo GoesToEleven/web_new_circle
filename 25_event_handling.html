@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script>
+    // MVC
+    // Model - View - Controller
+
+    function alertMe() {
+        alert("Hi")
+    }
+
+    window.addEventListener("load", function() {
+        // Everything is loaded
+
+        // Observer / Publish-Subscribe
+        var image = document.querySelector("img#bean");
+        image.addEventListener("click", alertMe);
+        image.addEventListener("click", function() {
+            alert("Hi again");
+        });
+    });
+
+
+    /*
+     OLD VERSION
+     document.querySelector("img#bean").onclick = alertMe;
+     document.querySelector("img#bean").onclick = function() {
+     alert("Hi again")
+     }*/
+
+</script>

@@ -934,6 +934,189 @@ functions are also variables in javascript
 
 ------------------------------------------
 
+document.querySelector(img#bean").onclick = alertMe;
+
+NOT WITH PARENTHESES
+document.querySelector(img#bean").onclick = alertMe(); WRONG WRONG WRONG
+
+------------------------------------------
+
+WHICH ONE GETS CALLED FIRST
+
+function alertMe() {alert("Hi"}
+
+document.querySelector(img#bean").onclick = alertMe;
+document.querySelector(img#bean").onclick = function() {alert("hi again")};
+
+------------------------------------------
+
+WAY TO DO IT TODAY
+
+document.querySelector(img#bean").addEventListener("click", alertMe );
+
+third arg is optional - use capture
+
+
+------------------------------------------
+DESIGN PATTERN
+
+OBSERVER DESIGN PATTERN
+sometimes known as PUBLISH / SUBSCRIBE
+
+in the list of 14
+GANG OF FOUR design patterns --- an old book
+
+MVC is a design patter also
+
+design patterns phrase come from BUILDING architecture.... actual buildings
+rotate table to face projector
+
+
+
+------------------------------------------
+
+OR THIS WAY
+
+document.querySelector(img#bean").addEventListener("click", function() {alert("hi again");});
+
+
+------------------------------------------
+
+IF YOU REFERENCE THE SAME QUERYSELECTOR TWO+ TIMES
+
+function alertMe() {alert("Hi"}
+
+var image = document.querySelector("img#bean");
+image.addEventListener("click", alertMe );
+image.addEventListener("click", function() {alert("hi again");});
+
+------------------------------------------
+
+http://gs.statcounter.com/
+
+
+------------------------------------------
+
+DATASET
+http://caniuse.com/#feat=dataset
+
+
+------------------------------------------
+
+https://developers.google.com/speed/pagespeed/module
+apache server tool
+merges all js files into one file on the server --- reduces page load time b/c less calls to server
+
+------------------------------------------
+
+        JSON
+        COUNTRY LIST
+        https://raw.githubusercontent.com/mledoze/countries/master/countries.json
+
+------------------------------------------
+
+SAVING DATA
+
+WEB STORAGE
+storage available inside browswer
+
+http://www.w3.org/TR/webstorage/
+
+local storage
+sessions storage
+
+
+local storage most useful
+
+session stores in browsers session
+close the browser, lose the data
+not so useful; not so many use cases
+
+sessionStorage.setItem("number", number)
+sessionStorage.getItem("number")
+
+localStorage will persist info forever in your computer
+
+
+localStorage.setItem("number", number)
+localStorage.getItem("number")
+
+not cross browser data
+but cross browser in terms of compatibility
+set in chrome, won't access in other browser
+
+origin = protocol + host + port
+
+when set from origin can only be access from origin
+
+5MB per origin can be stored
+
+webkit based browsers storing in utf-16
+each character uses 2 bytes, not 1
+
+
+------------------------------------------
+
+LABS FT
+http://labs.ft.com/
+
+LABS FT COMPRESS
+http://labs.ft.com/2012/06/text-re-encoding-for-optimising-storage-capacity-in-the-browser/
+
+
+
+------------------------------------------
+
+http://www.filldisk.com/
+
+------------------------------------------
+
+JSON
+stringify
+parse
+
+use that to store complex data in local storage
+
+
+
+------------------------------------------
+
+
+
+------------------------------------------
+
+
+
+------------------------------------------
+
+
+
+------------------------------------------
+
+
+
+------------------------------------------
+
+
+
+------------------------------------------
+
+
+
+------------------------------------------
+
+
+
+------------------------------------------
+
+
+
+------------------------------------------
+
+
+
+------------------------------------------
+
 
 
 ------------------------------------------

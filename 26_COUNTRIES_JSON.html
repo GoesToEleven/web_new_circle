@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<title>COUNTRIES</title>
+<script src="26_JSON.js"></script>
+
+<script>
+    function createTable() {
+        var section = document.querySelector("section");
+
+        var rows = countries.length;
+        var html = "<table border=1>";
+        for (var i = 0; i < rows; i++) {
+            html += "<tr>";
+//            for (var j = 0; j < cols; j++) {
+            html += "<td>";
+            html += countries[i].name.common;
+            html += "</td>";
+//            }
+            html += "</tr>";
+        }
+        html += "</table>";
+        section.innerHTML = html;
+
+//        console.log(countries.length);
+    }
+
+</script>
+
+<!--<a href="javascript:createTable()">Create Table</a>-->
+
+<section>
+
+
+</section>
+
+        <script>
+            createTable();
+        </script>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<title></title>
+<script src="26_JSON.js"></script>
+<style>
+    aside {
+        position: fixed;
+        right: 0;
+        top: 0;
+        padding: 20px;
+        width: 200px;
+        height: 150px;
+        background-color: gray;
+        color: white;
+    }
+</style>
+<script>
+
+
+    var html = "<table border=1>";
+    html += "<thead><tr><th>Name</th><th>Languages</th><th>Borders</th></tr></thead>"
+    for (var i=0; i<countries.length; i++) {
+        html += "<tr>";
+        // Name of the country
+        html += "<td data-index=" + i + ">";
+        html += countries[i].name.common;
+        html += "</td>";
+        // Languages
+        html += "<td data-index=" + i + ">";
+        for (property in countries[i].languages) {
+            html += countries[i].languages[property] + " ";
+        }
+        html += "</td>";
+        // Borders
+        html += "<td data-index=" + i + ">";
+        for (var j=0; j<countries[i].borders.length; j++) {
+            html += countries[i].borders[j] + " ";
+        }
+        html += "</td>";
+        html += "</tr>";
+    }
+    html += "</table>";
+    document.write(html);
+
+    /*
+     // Version 1 - capturing every td
+
+     var trs = document.querySelectorAll("tr");
+     for (var i=0; i<trs.length; i++) {
+     trs[i].addEventListener("mouseover", function() {
+     var currentCountry = countries[this.getAttribute("data-index")];
+     document.querySelector("aside").innerHTML =
+     "<dl>" +
+     "<dt>Capital City</dt>" +
+     "<dd>" + currentCountry.capital + "</dd>" +
+     "<dt>Region</dt>" +
+     "<dd>" + currentCountry.region + "</dd>" +
+     "</dl>";
+     });
+     }*/
+
+    // Version 2 - capturing the table
+
+    var table = document.querySelector("table");
+    table.addEventListener("mouseover", function(event) {
+        var currentCountry = countries[event.target.getAttribute("data-index")];
+        document.querySelector("aside").innerHTML =
+                "<dl>" +
+                "<dt>Capital City</dt>" +
+                "<dd>" + currentCountry.capital + "</dd>" +
+                "<dt>Region</dt>" +
+                "<dd>" + currentCountry.region + "</dd>" +
+                "</dl>";
+    });
+
+
+    // countries[0].name.common
+    // containers with optional closing: html, head, body, li, p, option
+</script>
+
+<aside></aside>
