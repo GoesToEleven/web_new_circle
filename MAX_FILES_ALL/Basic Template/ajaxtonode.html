@@ -1,0 +1,62 @@
+<!Doctype html>
+<title>AJAX</title>
+<h1>Tasks</h1>
+<script>
+    function readData() {
+        var request = new XMLHttpRequest();
+        request.open("GET", "http://localhost:8080");
+        request.responseType = "json";   // text, xml, arraybuffer, blob
+        request.addEventListener("load", function() {
+            var response = request.response;
+            var html = "";
+            for (var i=0; i<response.length; i++) {
+                html += "<li>" + response[i];
+            }
+            document.querySelector("ul").innerHTML = html;
+
+        });
+        request.addEventListener("error", function() {
+            console.log("Error");
+        });
+        request.send();
+    }
+
+    function saveData() {
+        var request = new XMLHttpRequest();
+
+        var task = document.querySelector("input#task").value;
+        request.open("GET", "http://localhost:8080/" + task);
+        request.responseType = "json";   // text, xml, arraybuffer, blob
+        request.addEventListener("load", function() {
+            alert("Saved?!");
+        });
+        request.addEventListener("error", function() {
+            console.log("Error");
+        });
+        request.send();
+    }
+
+
+
+    window.addEventListener("load", function() {
+       readData();
+       document.querySelector("#btnSave").addEventListener("click", function() {
+            saveData();
+       });
+    });
+
+</script>
+<ul></ul>
+
+<label for="task">Task name</label>
+<input id="task">
+<input type="button" id="btnSave">
+
+
+
+
+
+
+
+
+

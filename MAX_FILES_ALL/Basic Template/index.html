@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>My book store</title>
+
+<header>
+    <h1>Book store</h1>
+</header>
+
+        <script>
+            function add() {
+                var template = document.getElementById("myTemplate").innerHTML;
+                document.getElementById("lists").innerHTML += template;
+            }
+
+        </script>
+
+
+
+
+        <template id="myTemplate">
+           <ul>
+               <li>Item 1</li>
+               <li>Item 2</li>
+           </ul>
+        </template>
+        <a href="javascript:add()">Add a list</a>
+        <section id="lists"></section>
+<!--
+<nav>
+    <ul>
+        <li><a href="">Offers</a></li>
+        <li><a href="">Search</a></li>
+        <li><a href="">Stores</a></li>
+    </ul>
+</nav>
+<section id="offers">
+    <header>
+        <h2>Today's offers</h2>
+    </header>
+    <article class="featured">
+        <main>
+            <h3>Steve Jobs</h3>
+            <p>The biography of one of the most important CEOs in the digital world</p>
+        </main>
+        <section class="price">
+            <p>$15.00</p>
+            <p>Limited offer!</p>
+        </section>
+        <aside>
+            <p>If you like this book, you may also like <a href="">Apple is the devil</a></p>
+        </aside>
+    </article>
+    <article>
+        <h3>2001: A space odissey</h3>
+    </article>
+    <article>
+        <h3>Fundation</h3>
+    </article>
+</section>
+<footer>
+    <h6>(C) 2012, I like SciFi, so what? Inc.</h6>
+</footer>
+-->

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script>
+    function Person(aId) {
+        this.id = aId!=undefined?aId:-1;
+        this.name = "";
+        this.abilities = [];
+        this.howManyAbilities = function() {
+            return this.abilities.length;
+        }
+    }
+
+    // JSON - JavaScript Object Notation
+    var max2 = {
+        "name": "Max",
+        "lastname": "Firtman",
+        "country": {
+            "name": "Argentina"
+        },
+        "languages": ["en", "es"]
+    }
+
+
+
+
+    var max = new Person(34);
+    max.name = "Max";
+    max.country = new Object();
+    max.country.name = "Argentina";
+    max.country.distance = "too far away";
+    max.abilities = ["teaching", "glasshole"];
+
+   // max["name"]
+
+    var pope = new Person(12);
+    pope.name = "Francis";
+    pope.country = new Object();
+    pope.country.name = "Argentina";
+    pope.abilities = ["talking to people"];
+    pope.languages = ["italian", "spanish", "english"];
+
+
+    // Overloading functions
+    function print(text, color) {
+        console.log(arguments);
+        if (color!=undefined) {
+            console.log("SET COLOR " + color);
+        }
+        console.log("OUTPUT: " + text);
+    }
+
+    // Multiple arguments
+    function printAll() {
+        for (var i=0; i<arguments.length; i++) {
+            console.log("Argument " + i + ": " + arguments[i]);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

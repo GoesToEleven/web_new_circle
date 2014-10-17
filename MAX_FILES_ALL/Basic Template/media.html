@@ -1,0 +1,43 @@
+<!doctype html>
+<title>Media Queries</title>
+
+<style>
+
+
+    body {
+        transition: background 4s;
+    }
+
+    @media (min-width: 500px) {
+        body {
+            background: red;
+        }
+    }
+    @media (min-device-width: 200px) and (max-device-width: 400px)   {
+        body {
+            background: green;
+        }
+    }
+    @media (orientation: portrait) {
+        body {
+            background: white;
+        }
+    }
+
+    @media (orientation: landscape) {
+        body {
+            background: black;
+        }
+    }
+
+    @media (-min-webkit-device-pixel-ratio: 2) {
+       #logo {
+
+       }
+    }
+
+
+</style>
+
+<link rel="stylesheet" href="external.css" media="orientation: landscape">
+<link rel="stylesheet" href="external.css" media="orientation: portrait">

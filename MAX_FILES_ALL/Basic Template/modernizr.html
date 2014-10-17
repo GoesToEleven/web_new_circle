@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<title></title>
+<script src="http://firt.mobi/velocity/tests/fakejs.php?delay=8&size=200"></script>
+<script src="modernizr.js"></script>
+<img src="http://www.fresnocitycollege.edu/ftp/home_rotation/5.jpg">
+<script>
+    if (Modernizr.flexbox) {
+        document.write('<link rel="stylesheet" href="flex.css">');
+    } else {
+
+    }
+
+    if (matchMedia("max-device-width:400px").matches) {
+
+    }
+
+
+</script>
+
+<style>
+    .no-touch #touchDevices {
+        display: none;
+    }
+
+    .touch #nonTouchDevices {
+        display: none;
+    }
+
+</style>
+
+<section id="touchDevices">
+    <p>Touch me</p>
+</section>
+
+<section id="nonTouchDevices">
+    <p>Don't touch me :(</p>
+</section>
+
+</html>

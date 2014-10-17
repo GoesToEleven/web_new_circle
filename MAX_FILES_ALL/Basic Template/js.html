@@ -1,0 +1,32 @@
+<!doctype html>
+<script>
+    function fillSelect(id, from, to) {
+        var select = document.querySelector("#" + id);
+        select.innerHTML = "";
+        var html = "";
+        for (var i=from; i<=to; i++) {
+            html += "<option>" + i;
+        }
+        select.innerHTML = html;
+    }
+    function fillData() {
+        var time = performance.now();
+        fillSelect("day", 1, 31);
+        fillSelect("month", 1, 12);
+        fillSelect("year", 1900, 2014);
+        var duration = performance.now()-time;
+        console.log("Duration: " + duration);
+    }
+</script>
+<select id="day"></select>
+<select id="month"></select>
+<select id="year"></select>
+<a href="javascript:fillData()">Fill data</a>
+
+
+
+
+
+
+
+

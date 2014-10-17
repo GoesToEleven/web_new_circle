@@ -1,0 +1,201 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'sqlite' ]
+2 info using npm@1.4.23
+3 info using node@v0.10.31
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'sqlite', null ]
+6 verbose cache add name=undefined spec="sqlite" args=["sqlite",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'sqlite',
+7 verbose parsed url   path: 'sqlite',
+7 verbose parsed url   href: 'sqlite' }
+8 silly lockFile 6d64a5ee-sqlite sqlite
+9 verbose lock sqlite /Users/firt/.npm/6d64a5ee-sqlite.lock
+10 silly lockFile 6d64a5ee-sqlite sqlite
+11 silly lockFile 6d64a5ee-sqlite sqlite
+12 verbose addNamed [ 'sqlite', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 02179a0b-sqlite sqlite@
+15 verbose lock sqlite@ /Users/firt/.npm/02179a0b-sqlite.lock
+16 silly addNameRange { name: 'sqlite', range: '*', hasData: false }
+17 verbose request where is /sqlite
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 96ba5dc6827994dd
+20 verbose url raw /sqlite
+21 verbose url resolving [ 'https://registry.npmjs.org/', './sqlite' ]
+22 verbose url resolved https://registry.npmjs.org/sqlite
+23 verbose request where is https://registry.npmjs.org/sqlite
+24 info trying registry request attempt 1 at 15:00:11
+25 verbose etag "5TAT186LEN6ESKZIPNLLZR26R"
+26 http GET https://registry.npmjs.org/sqlite
+27 http 304 https://registry.npmjs.org/sqlite
+28 silly registry.get cb [ 304,
+28 silly registry.get   { date: 'Fri, 17 Oct 2014 22:00:10 GMT',
+28 silly registry.get     server: 'Apache',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     'last-modified': 'Fri, 17 Oct 2014 22:00:10 GMT',
+28 silly registry.get     'cache-control': 'max-age=60',
+28 silly registry.get     etag: '"5TAT186LEN6ESKZIPNLLZR26R"',
+28 silly registry.get     age: '24',
+28 silly registry.get     'x-served-by': 'cache-lax1420-LAX',
+28 silly registry.get     'x-cache': 'HIT',
+28 silly registry.get     'x-cache-hits': '1',
+28 silly registry.get     'x-timer': 'S1413583210.924642,VS0,VE0',
+28 silly registry.get     vary: 'Accept',
+28 silly registry.get     'content-length': '0',
+28 silly registry.get     'keep-alive': 'timeout=10, max=50',
+28 silly registry.get     connection: 'Keep-Alive' } ]
+29 verbose etag https://registry.npmjs.org/sqlite from cache
+30 silly addNameRange number 2 { name: 'sqlite', range: '*', hasData: true }
+31 silly addNameRange versions [ 'sqlite', [ '1.0.2', '1.0.3', '1.0.4' ] ]
+32 verbose addNamed [ 'sqlite', '1.0.4' ]
+33 verbose addNamed [ '1.0.4', '1.0.4' ]
+34 silly lockFile f07a2cfe-sqlite-1-0-4 sqlite@1.0.4
+35 verbose lock sqlite@1.0.4 /Users/firt/.npm/f07a2cfe-sqlite-1-0-4.lock
+36 silly lockFile f07a2cfe-sqlite-1-0-4 sqlite@1.0.4
+37 silly lockFile f07a2cfe-sqlite-1-0-4 sqlite@1.0.4
+38 silly lockFile 02179a0b-sqlite sqlite@
+39 silly lockFile 02179a0b-sqlite sqlite@
+40 silly resolved [ { name: 'sqlite',
+40 silly resolved     description: 'SQLite3 bindings for Node',
+40 silly resolved     version: '1.0.4',
+40 silly resolved     homepage: 'http://github.com/orlandov/node-sqlite',
+40 silly resolved     author:
+40 silly resolved      { name: 'Orlando Vazquez',
+40 silly resolved        email: 'ovazquez@gmail.com',
+40 silly resolved        url: 'http://2wycked.net' },
+40 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+40 silly resolved     repository:
+40 silly resolved      { type: 'git',
+40 silly resolved        url: 'git://github.com/orlandov/node-sqlite.git' },
+40 silly resolved     main: './sqlite',
+40 silly resolved     engines: { node: '>=0.2.0' },
+40 silly resolved     scripts: { test: './run-tests', preinstall: 'node-waf configure build' },
+40 silly resolved     licenses: [ [Object] ],
+40 silly resolved     _id: 'sqlite@1.0.4',
+40 silly resolved     _engineSupported: true,
+40 silly resolved     _npmVersion: '0.3.12',
+40 silly resolved     _nodeVersion: 'v0.5.0-pre',
+40 silly resolved     directories: {},
+40 silly resolved     files: [],
+40 silly resolved     _defaultsLoaded: true,
+40 silly resolved     dist:
+40 silly resolved      { shasum: '046d07908f37ec306723b4d347e6e1a8f4cce98e',
+40 silly resolved        tarball: 'http://registry.npmjs.org/sqlite/-/sqlite-1.0.4.tgz' },
+40 silly resolved     _shasum: '046d07908f37ec306723b4d347e6e1a8f4cce98e',
+40 silly resolved     _from: 'sqlite@',
+40 silly resolved     _resolved: 'https://registry.npmjs.org/sqlite/-/sqlite-1.0.4.tgz',
+40 silly resolved     bugs: { url: 'https://github.com/orlandov/node-sqlite/issues' },
+40 silly resolved     readme: 'ERROR: No README data found!' } ]
+41 info install sqlite@1.0.4 into /Users/firt/Desktop/Temp/Basic Template/npm/fresno
+42 info installOne sqlite@1.0.4
+43 verbose node_modules/sqlite unbuild
+44 verbose tar unpack /Users/firt/.npm/sqlite/1.0.4/package.tgz
+45 silly lockFile bb0838f5-e-npm-fresno-node-modules-sqlite tar:///Users/firt/Desktop/Temp/Basic Template/npm/fresno/node_modules/sqlite
+46 verbose lock tar:///Users/firt/Desktop/Temp/Basic Template/npm/fresno/node_modules/sqlite /Users/firt/.npm/bb0838f5-e-npm-fresno-node-modules-sqlite.lock
+47 silly lockFile 3fb17369-irt-npm-sqlite-1-0-4-package-tgz tar:///Users/firt/.npm/sqlite/1.0.4/package.tgz
+48 verbose lock tar:///Users/firt/.npm/sqlite/1.0.4/package.tgz /Users/firt/.npm/3fb17369-irt-npm-sqlite-1-0-4-package-tgz.lock
+49 silly gunzTarPerm modes [ '755', '644' ]
+50 silly gunzTarPerm extractEntry
+51 silly gunzTarPerm extractEntry .gitignore
+52 silly gunzTarPerm extractEntry .gitmodules
+53 silly gunzTarPerm extractEntry async-testing/
+54 silly gunzTarPerm extractEntry build.sh
+55 silly gunzTarPerm extractEntry deps/
+56 silly gunzTarPerm extractEntry package.json
+57 silly gunzTarPerm extractEntry README.md
+58 silly gunzTarPerm extractEntry run-tests
+59 silly gunzTarPerm extractEntry sqlite.js
+60 silly gunzTarPerm extractEntry sqlite3_bindings.node
+61 silly gunzTarPerm extractEntry src/
+62 silly gunzTarPerm extractEntry tests/
+63 silly gunzTarPerm extractEntry wscript
+64 silly gunzTarPerm extractEntry tests/lib/
+65 silly gunzTarPerm extractEntry tests/old/
+66 silly gunzTarPerm extractEntry tests/test-affected-rows.js
+67 silly gunzTarPerm extractEntry tests/test-bind-placeholders.js
+68 silly gunzTarPerm extractEntry tests/test-bind-strings.js
+69 silly gunzTarPerm extractEntry tests/test-last-inserted-id.js
+70 silly gunzTarPerm extractEntry tests/test-prepare.js
+71 silly gunzTarPerm extractEntry tests/test-statement-fetchall.js
+72 silly gunzTarPerm extractEntry tests/test-statement-step.js
+73 silly gunzTarPerm extractEntry tests/old/speedtest-low-parallel-binds.js
+74 warn excluding symbolic link sqlite3_bindings.node -> build/default/sqlite3_bindings.node
+75 silly gunzTarPerm extractEntry tests/old/speedtest-low-parallel.js
+76 silly gunzTarPerm extractEntry tests/old/speedtest-low.js
+77 silly gunzTarPerm extractEntry tests/old/speedtest.js
+78 silly gunzTarPerm extractEntry tests/old/speedtest.rb
+79 silly gunzTarPerm extractEntry tests/old/speedtest2.js
+80 silly gunzTarPerm extractEntry tests/old/speedtest2.rb
+81 silly gunzTarPerm extractEntry tests/old/test2.js
+82 silly gunzTarPerm extractEntry tests/lib/common.js
+83 silly gunzTarPerm extractEntry src/database.cc
+84 silly gunzTarPerm extractEntry src/database.h
+85 silly gunzTarPerm extractEntry src/sqlite3_bindings.cc
+86 silly gunzTarPerm extractEntry src/sqlite3_bindings.h
+87 silly gunzTarPerm extractEntry src/statement.cc
+88 silly gunzTarPerm extractEntry src/statement.h
+89 silly gunzTarPerm extractEntry deps/mpool-2.1.0/
+90 silly gunzTarPerm extractEntry deps/sqlite/
+91 silly gunzTarPerm extractEntry deps/sqlite/._shell.c
+92 silly gunzTarPerm extractEntry deps/sqlite/shell.c
+93 silly gunzTarPerm extractEntry deps/sqlite/._sqlite3.c
+94 silly gunzTarPerm extractEntry deps/sqlite/sqlite3.c
+95 silly gunzTarPerm extractEntry deps/sqlite/._sqlite3.h
+96 silly gunzTarPerm extractEntry deps/sqlite/sqlite3.h
+97 silly gunzTarPerm extractEntry deps/sqlite/._sqlite3ext.h
+98 silly gunzTarPerm extractEntry deps/sqlite/sqlite3ext.h
+99 silly gunzTarPerm extractEntry deps/mpool-2.1.0/ChangeLog.1
+100 silly gunzTarPerm extractEntry deps/mpool-2.1.0/Makefile
+101 silly gunzTarPerm extractEntry deps/mpool-2.1.0/mpool.c
+102 silly gunzTarPerm extractEntry deps/mpool-2.1.0/mpool.h
+103 silly gunzTarPerm extractEntry deps/mpool-2.1.0/mpool_loc.h
+104 silly gunzTarPerm extractEntry deps/mpool-2.1.0/mpool_t.c
+105 silly gunzTarPerm extractEntry deps/mpool-2.1.0/NEWS
+106 silly gunzTarPerm extractEntry deps/mpool-2.1.0/README
+107 silly gunzTarPerm extractEntry async-testing/async_testing.js
+108 silly gunzTarPerm extractEntry async-testing/AUTHORS
+109 silly gunzTarPerm extractEntry async-testing/examples/
+110 silly gunzTarPerm extractEntry async-testing/LICENSE
+111 silly gunzTarPerm extractEntry async-testing/node-async-test
+112 silly gunzTarPerm extractEntry async-testing/README.markdown
+113 silly gunzTarPerm extractEntry async-testing/todo.txt
+114 silly gunzTarPerm extractEntry async-testing/examples/test-readme.js
+115 silly gunzTarPerm extractEntry async-testing/examples/test-suites.js
+116 silly lockFile bb0838f5-e-npm-fresno-node-modules-sqlite tar:///Users/firt/Desktop/Temp/Basic Template/npm/fresno/node_modules/sqlite
+117 silly lockFile bb0838f5-e-npm-fresno-node-modules-sqlite tar:///Users/firt/Desktop/Temp/Basic Template/npm/fresno/node_modules/sqlite
+118 silly lockFile 3fb17369-irt-npm-sqlite-1-0-4-package-tgz tar:///Users/firt/.npm/sqlite/1.0.4/package.tgz
+119 silly lockFile 3fb17369-irt-npm-sqlite-1-0-4-package-tgz tar:///Users/firt/.npm/sqlite/1.0.4/package.tgz
+120 info preinstall sqlite@1.0.4
+121 verbose unsafe-perm in lifecycle false
+122 info sqlite@1.0.4 Failed to exec preinstall script
+123 verbose node_modules/sqlite unbuild
+124 info preuninstall sqlite@1.0.4
+125 info uninstall sqlite@1.0.4
+126 verbose true,/Users/firt/Desktop/Temp/Basic Template/npm/fresno/node_modules,/Users/firt/Desktop/Temp/Basic Template/npm/fresno/node_modules unbuild sqlite@1.0.4
+127 info postuninstall sqlite@1.0.4
+128 error sqlite@1.0.4 preinstall: `node-waf configure build`
+128 error Exit status 127
+129 error Failed at the sqlite@1.0.4 preinstall script.
+129 error This is most likely a problem with the sqlite package,
+129 error not with npm itself.
+129 error Tell the author that this fails on your system:
+129 error     node-waf configure build
+129 error You can get their info via:
+129 error     npm owner ls sqlite
+129 error There is likely additional logging output above.
+130 error System Darwin 13.4.0
+131 error command "node" "/usr/local/bin/npm" "install" "sqlite"
+132 error cwd /Users/firt/Desktop/Temp/Basic Template/npm/fresno
+133 error node -v v0.10.31
+134 error npm -v 1.4.23
+135 error code ELIFECYCLE
+136 verbose exit [ 1, true ]

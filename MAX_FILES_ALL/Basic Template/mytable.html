@@ -1,0 +1,19 @@
+<!doctype html>
+      <script src="TableGenerator.js"></script>
+      <script>
+
+          var rows = prompt("How many rows?", "4");
+          var cols = prompt("How many cols?", "10");
+
+          var generator = new TableGenerator(rows, cols);
+          var section = document.querySelector("section");
+          section.innerHTML = generator.getHTML();
+          generator.tableElement = document.querySelector("table");
+          generator.createCoolColorEffect();
+
+          var generator2 = new TableGenerator(10, 30);
+
+
+      </script>
+
+      <section></section>
