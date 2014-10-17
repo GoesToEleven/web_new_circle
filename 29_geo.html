@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<title></title>
+
+<script>
+
+    function locationAcquired(position) {
+        //       console.log(position)
+        console.log(position.coords.latitude + "," + position.coords.longitude);
+    }
+
+    function locationError() {
+
+    }
+
+    window.addEventListener("load", function () {
+        var btnLocate = document.querySelector("#btnLocate")
+        btnLocate.addEventListener("click", function () {
+            //console.log("Button is working");
+            navigator.geolocation.watchPosition(locationAcquired, locationError);
+        });
+    });
+
+</script>
+
+<input type="button" value="locate me" id="btnLocate">
