@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <title></title>
+<!Doctype html>
+<title>AJAX</title>
+<h1>Weather</h1>
+<script>
+    var request = new XMLHttpRequest();
+    request.open("GET", "http://api.openweathermap.org/data/2.5/weather?q=Fresno,CA&units=imperial");
+    request.responseType = "json";   // text, xml, arraybuffer, blob
+    request.addEventListener("load", function() {
+        var response = request.response;
+        document.querySelector("output").innerHTML = response.main.temp + " F";
+
+        var img = document.createElement("img");
+        img.src = "http://openweathermap.org/img/w/" + response.weather[0].icon +
+                ".png";
+        document.querySelector("output").appendChild(img);
+
+        console.log(response);
+    });
+    request.addEventListener("error", function() {
+        console.log("Error");
+    });
+    request.send();
+</script>
+<output></output>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<title></title>
+
+
+<form>
+
+    <label for="firstname">First Name</label>
+    <input id="firstname">
+
+    <label for="email">E-mail</label>
+    <input type=email id="email">
+
+    <input type="button" value="Save" id="btnSave">
+    <input type="button" value="Fill" id="btnFill">
+    <input type="button" value="Clear" id="btnClear">
+
+    <script>
+
+                var $$ = document.querySelector;
+
+        //       or it can be like this, instead of above
+
+        function $$ (s) {
+            return document.querySelector(s);
+        }
+
+        function saveData() {
+            var firstName = $$("#firstname").value;
+            var eMail = $$("#email").value;
+
+            var listJSON = {
+                "firstName": firstName,
+                "eMail": eMail
+            }
+
+            //stringify
+            var stringJSON = JSON.stringify(listJSON);
+
+            //save string to local storage
+            localStorage.setItem("userDataLocal", stringJSON);
+        }
+
+        function fillData() {
+            if (localStorage.getItem(("userDataLocal") != undefined)) {
+                //get data
+                // turn into an object
+                var listJSONRetrieved = JSON.parse(localStorage.getItem("userDataLocal"));
+                // set local elements to data
+                $$("#firstname").value = listJSONRetrieved.firstName;
+                $$("#email").value = listJSONRetrieved.eMail;
+            }
+        }
+
+        function clearData() {
+            $$("#firstname").value = "";
+            $$("#email").value = "";
+        }
+
+        $$("#btnSave").addEventListener("click", saveData);
+        $$("#btnFill").addEventListener("click", fillData);
+        $$("#btnClear").addEventListener("click", clearData);
+
+    </script>

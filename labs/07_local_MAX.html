@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<title>Web Storage</title>
+<script>
+    var $ = function(s) {
+        return document.querySelector(s);
+    }
+
+    window.addEventListener("load", function() {
+        $("input[type=button]").addEventListener("click",
+                function() {
+                    var credentials = {
+                        "username": $("#username").value,
+                        "password": $("#password").value
+                    }
+                    localStorage.setItem("credentials", JSON.stringify(credentials));
+                });
+
+        // Retrieve credentials
+        if (localStorage.getItem("credentials")!=undefined) {
+            var credentials = JSON.parse(localStorage.getItem("credentials"));
+            $("#username").value = credentials.username;
+            $("#password").value = credentials.password;
+        }
+    })
+
+
+</script>
+
+<label for="username">Username</label>
+<input id="username" type="text">
+
+<label for="password">Password</label>
+<input id="password">
+
+<input type="button" value="Save">
